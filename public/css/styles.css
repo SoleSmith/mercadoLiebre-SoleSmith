@@ -1,0 +1,565 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  font-size: 12px;
+}
+
+h2 {
+  font-size: 24px;
+  color: #666;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 13px;
+  text-decoration: none;
+  margin-bottom: 5px;
+  font-weight: bold;
+  text-shadow: none;
+}
+
+main {
+  background-color: #ebebeb;
+  padding: 20px;
+  align-content: center;
+}
+
+/*Banner home*/
+img {
+  width: 100%;
+}
+
+.banner {
+  display: flex;
+}
+
+.main-header {
+  background-color: #eac926;
+  padding: 20px;
+  width: 100vw;
+  .fa-solid {
+    color: black;
+  }
+}
+
+/*Logo Mercado Liebre*/
+.logo {
+  width: 150px;
+  padding-bottom: 15px;
+  width: 50%;
+}
+
+/*Compra en cuotas y sin tarjeta de crédito*/
+.text-header {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-weight: 400;
+  text-align: center;
+  color: #222222;
+  font-size: 16px;
+}
+
+/* Ocultar listas de navegación para mobile*/
+.main-navbar {
+  display: none;
+}
+
+/* para que le doy estilo en mobile si no se muestran, es necesario?*/
+
+.main-navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: #222222;
+}
+
+.main-navbar a {
+  text-decoration: none;
+  color: #222222;
+  display: inline-block;
+  padding: 5px 0;
+}
+
+.header-top-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bloqueBusqueda {
+  width: 50%;
+  display: contents;
+}
+
+.searchHeader {
+  width: 50%;
+  display: flex;
+}
+
+.searchHeader input {
+  border: none;
+  width: 100%;
+}
+
+:link {
+  text-decoration: none;
+}
+
+#lupa {
+  background-color: #ebebeb;
+  padding: 4px;
+}
+
+.burger-menu {
+  background-color: #03264c;
+  color: white;
+  display: block;
+  max-width: 50px;
+  border-radius: 5px;
+  padding: 6px 8px;
+  margin: auto;
+  text-align: center;
+  font-size: 16px;
+}
+
+/*Formularios registro*/
+
+.formulario-registro {
+  width: 60%;
+  margin: auto;
+}
+
+.formulario-registro p{
+  width: 100%;
+  text-align: center;
+}
+
+.formulario-registro label{
+  font-size: 13px;  
+}
+
+.formulario-registro button {
+  width: 40%;
+  position: relative;
+  padding: 5px;
+  margin: 5px;
+  border: none;
+  color: #fff;
+  background-color: #1259c3;
+}
+
+#enviar-login {
+  border: none;
+  color: #fff;
+  width: 80%;
+  background-color: #03264c;
+  transition: all 0.5s;
+}
+
+.formulario-registro #enviar-login:hover{
+  background-color: #0022AA;
+}
+
+
+input[type="text"] {
+  border-radius: 15px;
+  border-style: none;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  font-weight: 200;
+  width: 100%;
+}
+
+input[type="file"] {
+  border-radius: 15px;
+  border-style: none;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  font-weight: 200;
+  width: 100%;
+}
+
+input[type="email"] {
+  border-radius: 15px;
+  border-style: none;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  font-weight: 200;
+  width: 100%;
+}
+
+input[type="date"] {
+  border-radius: 15px;
+  border-style: none;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  font-weight: 200;
+  width: 100%;
+}
+
+.types-user {
+  justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.type-list {
+  width: auto;
+  flex-direction: row;
+  display: flex;
+  padding: 5px 10px 5px 10px;
+}
+
+.type-list label {
+  margin-left: 10px;
+}
+
+input[type="checkbox"] {
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  font-weight: 200;
+}
+
+input[type="password"] {
+  border-radius: 15px;
+  border-style: none;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  font-weight: 200;
+  width: 100%;
+}
+
+input[type="confirm-password"] {
+  border-radius: 15px;
+  border-style: none;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  font-weight: 200;
+  width: 100%;
+}
+
+main form div.info-usuario {
+  width: 100%;
+  flex-direction: column;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+/*main products Ulitmas visitas-Ofertas*/
+section {
+  display: block;
+}
+
+.ultima-visita,
+.ofertas {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.productos {  
+  display: block;
+}
+
+main section article {
+  background-color: #fff;
+  margin: 10px 5px;
+  display: flex;
+  flex-direction: column;
+  transition: all;
+}
+
+main section article:hover{
+  box-shadow: 0px 0px 5px rgb(100, 100, 100);
+}
+
+.img {
+  width: 100px;
+  overflow-clip-margin: content-box;
+  overflow: border-box;
+}
+
+article div.detalle {
+  width: 100%;
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  border-top: 1px solid #ebebeb;
+  position: relative;
+  padding: 15px;
+}
+
+main section article i {
+  display: block;
+  font-size: 16px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #39b54a;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  top: -15px;
+  transition: all 0.5s;
+}
+
+main section article i:hover {
+  transform: rotate(-90deg);
+}
+
+.price {
+  width: 30%;
+  font-weight: normal;
+}
+
+.discount {
+  width: 70%;
+  color: #39b54a;
+  font-weight: normal;
+}
+
+.description {
+  font-weight: normal;
+  display: none;
+  margin-top: 15px;
+  transition: all;
+}
+
+.discount,
+.description {
+  align-items: center;
+  justify-content: space-between;
+}
+
+article:hover h4.description{       
+    display: block;
+}
+
+.fas {
+  align-items: center;
+}
+
+.fa-solid {
+  color: #39b54a;
+}
+
+footer {
+  text-align: center;
+  .texto-final {
+    text-align: left;
+  }
+  .fa-regular {
+    color: #1259c3;
+    width: 2em;
+    margin-bottom: 10px;
+  }
+  .fa-solid {
+    color: #1259c3;
+    width: 2em;
+    margin-bottom: 10px;
+  }
+
+  #icono-footer{
+    transition:all 0.5s;    
+  }
+
+  #icono-footer:hover{
+    color: #39b54a;    
+  }
+
+}
+strong {
+  color: #666;
+}
+
+.secciones {
+  width: 80%;
+  align-content: center;
+  padding: 15px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  display: flex;
+}
+
+.secciones p {
+  text-align: center;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+/*Versión Tablet*/
+@media (min-width: 361px) {
+  /*header*/
+  .main header-top-bar {
+    display: flex;
+    justify-content: space-between;
+  }
+  .text-header {
+    max-width: 361px;
+    text-align: right;
+  }
+
+  .burger-menu {
+    display: none;
+  }
+
+  .main-navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .main-navbar ul {
+    display: flex;
+  }
+  .main-navbar li {
+    margin: 0 5px;
+  }
+
+  /*Main Products Ultimas compras-Ofertas*/
+
+  .productos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+ 
+  .img {
+    width: 100%;
+  }
+
+  .detalle {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    border-top: 1px solid #ebebeb;
+    position: relative;
+    padding: 15px;
+  }
+
+  .price,
+  .discount {
+    width: 50%;
+  }
+
+  article { 
+    width: 45%;
+    flex-direction: row;
+    display: flex;
+  }
+
+
+  .footer {
+    /*display: contents;*/
+    width: 50%;
+    text-align: center;
+  }
+}
+
+/*Versión Desktop*/
+@media (min-width: 768px) {
+  .logo {
+    width: 250px;
+  }
+
+  .burger-menu {
+    display: none;
+  }
+
+  .main header-top-bar,
+  .main-navbar {
+    display: flex;    
+  }
+  .main header-top-bar {
+    align-items: center;
+  }
+  .main-navbar {
+    margin-top: 40px;
+  }
+
+  .main-navbar li {
+    margin: 0 10px;
+  }
+  .main-navbar a {
+    font-size: 16px;
+  }
+  .text-header p {
+    max-width: none;
+    font-size: 16px;
+    font-weight: 400;
+    margin: auto;
+    display: flex;
+  }
+
+  .bloqueBusqueda {
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+    flex: auto;
+    display: flex;
+  }
+
+  .searchHeader {
+    width: 50%;
+  }  
+
+  .lista1 ul {
+    padding-right: 30px;
+
+    display: flex;
+  }
+
+  .lista2 ul {
+    padding-left: 30px;
+
+    display: flex;
+  }
+
+  /*Main products Ultimas visitas-Ofertas*/
+
+  article {
+    width: 22%;
+  }
+
+   .secciones{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .secciones section{
+    padding: 0px 10px;
+  }
+
+  .texto-final{
+    padding-left: 20px;
+  }
+}
