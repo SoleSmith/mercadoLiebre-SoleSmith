@@ -140,7 +140,7 @@ img {
   font-size: 16px;
 }
 
-/*Formularios registro*/
+/*Formularios registro y formulario login */
 
 .formulario-registro {
   width: 60%;
@@ -150,6 +150,7 @@ img {
 .formulario-registro p{
   width: 100%;
   text-align: center;
+  padding: 5px 0px;  
 }
 
 .formulario-registro label{
@@ -263,6 +264,29 @@ main form div.info-usuario {
   flex-wrap: wrap;
   display: flex;
 }
+
+/*Formulario registro y login -Errores*/
+
+.error{
+  display: none;
+  font-size: 10px;
+  
+}
+
+input:invalid{
+  border-color: red;
+}
+
+input:invalid + .error{
+  display: block;
+  color:red;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  line-height: 0%;
+}
+
+
+
 
 /*main products Ulitmas visitas-Ofertas*/
 section {
