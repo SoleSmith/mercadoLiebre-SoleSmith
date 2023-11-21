@@ -61,16 +61,18 @@
     <form action="/register" method="POST" class="formulario-registro">
       <!--<div class="info-usuario">-->
         <!-- Datos del usuario-->        
-        <p><input type="text" name="nombre" id="nombre" placeholder="Nombre y Apellido"></p>
-        
-        <p><input type="text" name="usuario" id="usuario" placeholder="Nombre de usuario"></p>
-        
-        <p><input type="email" name="email" id="email" placeholder="E-mail"></p>
+        <input type="text" name="nombre" id="nombre" placeholder="Nombre y Apellido" required>
+        <span class="error">Nombre inválido</span>
+        <input type="text" name="usuario" id="usuario" placeholder="Nombre de usuario" required>
+        <span class="error">Usuario inválido</span>
+        <input type="email" name="email" id="email" placeholder="E-mail" required>
+        <span class="error">Email incorrecto</span>
 
         <h5>Fecha de Nacimiento</h5>
         <p><input type="date" name="nacimiento" id="nacimiento" placeholder="mm/dd/yyyy"></p>
         
         <p><input type="text" name="domicilio" id="domicilio" placeholder="Domicilio"></p>
+        <br>
 
         <!-- Perfil comprador/vendedor-->
         <h5>Perfil de usuario:</h5>
@@ -82,7 +84,7 @@
           <input type="radio" name="perfil" id="perfil" value="vender" /> <label>Vender</label>
       </p>
       </div>
-
+      <br>
         <!-- Preferencias del usuario-->
         <h5>Intereses</h5>
 
@@ -107,9 +109,11 @@
 
        <!-- Contraseña-->       
         <input type="password" name="password" id="password"  placeholder="Contraseña"></p>
+        
 
        <!-- Confirmar Contraseña-->       
-        <input type="confirm-password" name="confirm-password" id="confirm-password"  placeholder="Confirmar contraseña"></p>
+        <input type="confirm-password" name="confirm-password" id="confirm-password" placeholder="Confirmar contraseña"></p>
+        
 
       <!-- Enviar datos-->
       
