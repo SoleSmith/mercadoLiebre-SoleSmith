@@ -58,19 +58,19 @@
   </header>
  
   <main>
-    <form action="/login" method="POST" class="formulario-registro">
+    <form action="/login" method="POST" class="formulario-registro"> <!-- uso igual clases para dar el mismo estilo-->
       
         <!-- Datos Login de usuario-->
         
-        <input type="text" name="usuario" id="usuario" placeholder="Nombre de usuario"></p>
-        
+        <input type="text" name="usuario" id="usuario" placeholder="Nombre de usuario" required>
+        <span class="error">Usuario incorrecto</span>
        <!-- Contraseña-->
       
-        <input type="password" name="password" id="password" placeholder="Contraseña"></p>
+        <input type="password" name="password" id="password" placeholder="Contraseña" required>
+        <span class="error">Contraseña incorrecta</span>
 
         <!-- Enviar datos--> 
-      <p><button type="submit" value="Enviar" id="enviar-login">Enviar</button>   
-    
+      <button type="submit" value="Enviar" id="enviar-login">Enviar</button>    
     </form>
   </main>
 
