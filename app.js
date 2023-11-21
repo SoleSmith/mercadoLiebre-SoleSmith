@@ -22,7 +22,5 @@ app.get('/home', (req, res) => {
     res.sendFile(path.resolve("./views/home.html"))
 })
 
-app.listen(PORT, () =>{
-    console.log('Servidor funcionando')
-});
+
 
