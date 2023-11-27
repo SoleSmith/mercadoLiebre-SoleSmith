@@ -394,12 +394,12 @@ footer {
   }
   .fa-regular {
     color: #1259c3;
-    width: 2em;
+    font-size: 2em;
     margin-bottom: 10px;
   }
   .fa-solid {
     color: #1259c3;
-    width: 2em;
+    font-size: 2em;
     margin-bottom: 10px;
   }
 
